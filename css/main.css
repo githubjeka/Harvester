@@ -1,0 +1,132 @@
+/* ---------------------------------------------------- main css ----------------------------------------------------  */
+body {background: url(../images/1.png)}
+div.main_ris {background: url(../images/text.png) no-repeat;width:765px;height:76px;margin:40px auto;}
+div.body_down{text-align: center;font-size: 14px;}
+.copyright{text-align:center;}
+
+/* ---------------------------------------------------- header css ----------------------------------------------------  */
+.navmenu {margin:10px 12px 0 0;}
+.navlink {font-size:16px;font-weight:bold;}
+.DashBoard {font-size:14px;font-weight:bold;}
+ /* ---------------------------------------------------- menu css  ---------------------------------------------------- */
+.menu_center {width: 850px;margin: 0px auto;}
+.menu_fieldset {border: 1px solid #aaa;margin:15px 0px;padding:15px;}
+.menu1 {width: 350px;float: left;}
+.menu1 li {list-style: none;padding: 2px 0px;}
+.menu2, .menu3 {float: right;width: 400px;}
+.menu_legend {font-weight:bold;color: #111;padding:5px 10px}
+.menu_fieldset a {text-decoration: none;}
+.menu_fieldset a:hover {text-decoration: underline;}
+.menu_admin1{width:150px;float:left;}
+.menu_admin1 input{width:150px;}
+.menu_admin1 input.inputSubmit{width:154px;}
+.menu_admin2{width:150px;float:right;}
+#comp_create input {width: 200px;border: 1px solid #AAA;padding: 0px;}
+.but_create{width: 133px;margin:2px 0px;}
+.but_reboot{width: 154px;margin:2px 0px;}
+.menu_fieldset select#list_comp, .menu_fieldset select#list_otdel, .menu_fieldset .but_delete{margin:2px 0px;width: 318px;}
+p.menu_online {margin-top: 15px;}
+
+
+/* ----------------------------------------------------otdel edit css ----------------------------------------------------  */
+.ico_otdel {background: url(../images/list.png);width:16px;height:16px;float: left;cursor: pointer;}
+#edit_otdel {-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);-moz-border-radius: 5px;-webkit-border-radius: 5px;border: 1px solid #aaa;width: 225;background: #ddd;position: absolute;padding:15px;display:none;}
+#edit_otdel h2 {margin: 0px !important;}
+.otdel_select, .otdel_input {float: left;margin: 0px 7px 0px 0px;}
+.otdel_select select {width:200px !important; margin:0px !important;}
+.otdel_input {border: 1px solid #AAA;padding: 0px;width:200px;}
+.ico_create_otdel {background: url(../images/plus.png);width:16px;height:16px;float: left;cursor: pointer;}
+.ico_delete_otdel {background: url(../images/trash.png);width:16px;height:16px;float: left;cursor: pointer;clear: left;margin-top: 10px;}
+
+/* ---------------------------------------------------- table view css ----------------------------------------------------  */
+th {padding:2px 0px;}
+ 
+  /* ---------------------------------------------------- edit css  ---------------------------------------------------- */
+.edit_td {background: #eee;float:left;padding: 5px;margin: 2px 2px 0px 0px;border:1px solid #333;}
+.edit_view {width: 700px;float:right;padding:11px 20px 20px;}
+.edit_legend{font-size: 14px;font-weight:bold;background: #333;color: #aaa;margin:10px 0px;padding:2px;}
+.edit_podlegend{background: #aaa;color: #333;margin:10px 0px;}
+.edit_menu {position: relative;width: 150px;float: right;padding: 15px;border: 1px solid #999;margin: 20px 0px 0px 5px;}
+.edit_menu li{list-style:none;margin:2px 0px;}
+.edit_menu li a{text-decoration: none;}
+.edit_menu li a:hover{text-decoration: underline;}
+.edit_menu_li_div{margin:15px 0px;}
+.edit_menu input{margin: 5px 0px;}
+.edit_row_view {float: left;width: 680px;height:16px;margin:0px 0px 2px 20px;}
+._edit_even {background:#ddd;}
+.edit_row_name{width:180px;float: left;}
+.edit_row_value{width: 462px;float: left;}
+.edit_row_input{width: 462px;float: left;border: 1px solid #AAA;padding: 0px;margin: 0px;}
+.edit_row_input:focus{color: red;border: 1px solid #000;outline:none;background-color:#fff;}
+.edit_row_view .edit_tag {float: right;width:16px;height:16px;background:url(../images/tag.png);cursor: pointer;}
+.edit_row_view .show_tag_on {float: right;width:16px;height:16px;background:url(../images/exclamation.png);cursor: pointer;margin-left: 3px;}
+.edit_row_view .show_tag_off {float: right;width:16px;height:16px;background:url(../images/caution.png);cursor: pointer;margin-left: 3px;}
+.e_b {padding-top: 20px;}
+/* ---------------------------------------------------- workPlace css  ---------------------------------------------------- */
+.wk_selection {color:#000;}
+.wk_head_text {width: 150px;float:left;margin:15px 0px  0px;}
+.wk_box {float:left;margin:15px 25px  15px 0px}
+.wk_value_text {border-bottom:1px solid #666;text-align:center;}
+.wk_value {font-size: 80%; text-align:center;}
+.border{border-bottom: 1px solid #ddd}
+.wk_fieldset {border: 1px solid #555;margin:5px 0px;padding:0 15px;}
+.wk_legend {background: #333;color: #aaa}
+
+/* ---------------------------------------------------- wmi  css ----------------------------------------------------  */
+.wmi_view_fieldset {margin:15px 0px;border: 1px solid #333;width:445px;padding:10px;float:right;}
+.wmi_view_left {float:left;}
+.wmi_fieldset {margin:5px 0px;padding:15px;}
+.wmi_legend {background: #333;color: #aaa;width:419px;}
+.wmi_div_left{width: 190px;float: left;}
+
+/* ---------------------------------------------------- register  css ----------------------------------------------------  */
+.register {margin:0px auto;width:300px;}
+.register p {margin:10px 0px 0px;}
+.register_button{width:133px;}
+.reg_inp {width:133px;}
+
+/* ---------------------------------------------------- login_form css ----------------------------------------------------  */
+.logon_buttton {margin-top: 10px;width: 133px;}
+
+/* ---------------------------------------------------- panel_admin  css ----------------------------------------------------  */
+.panel_admin {display:none;background:#ddd;-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);-moz-border-radius: 5px;-webkit-border-radius: 5px;border: 1px solid #aaa;width:300px;position:absolute;}
+.panel_admin_ico, .subpanel_admin_ico{width:14px;height:14px;display:block;background: url(../images/ui-icons_888888_256x240.png) no-repeat;background-position: -32px -192px;float: right;margin: 0px 10px;}
+.panel_admin_ui {list-style-type:none;}
+.panel_admin_ui li {margin: 5px;}
+.panel_invait, .panel_pass {display:none;}
+#form_key_access {float: left;}
+.panel_admin_left {display:none;}
+.user_group {float:left;}
+
+/* ----------------------------------------------------Service css------Process  css  Share----------------------------------------------------  */
+#service_form span {width: 200px;}
+#service_form input, #process_form input{width: 156px;float:left;}
+.service_run {color:green;}
+.service_stop {color:red;}
+.but_service{margin:0px 2px;width:160px;float:left;}
+.but_process_stop{width:14px;}
+.share_do {float: left;width: 14px;height: 14px;text-align: center;margin-right: 10px;}
+
+/* ----------------------------------------------------online  css  ----------------------------------------------------  */
+.online {float: left;width: 100px;}
+a.bd_on {text-decoration: none!important;color: #36C;}
+a.bd_off {text-decoration: none!important;color: black;}
+a.bd_off:hover , a.bd_on:hover {text-decoration: underline!important;color: red;}
+
+/* ----------------------------------------------------get_data  css  ----------------------------------------------------  */
+.main_getdata {width: 415px;float: left;margin: 0px 30px 30px 0px;}
+.head_getdata {font-weight:bold;}
+.num_getdata{float:left;width:30px;}
+.name_getdata{float:left;width:150px;}
+.Status_getdata {float:left;}
+.online_scan {display:none;}
+.scan_b {width: 250px;margin: 0px auto;}
+
+dl.DdFloatClear dd {float:none !important;}
+dl.DdFloatClear dd a.active {background: #D8582B;color: white;font-weight: bold;}
+dl.DdFloatClear {height: auto !important;}
+.headerTitle {color: #D8582B;}
+
+#bar .ui-progressbar-value{
+	background-image:url(../images/pbar-ani.gif);	
+}

@@ -1,0 +1,4 @@
+AddDefaultCharset UTF-8
+php_value max_execution_time 60
+RewriteEngine on
+RewriteRule index.html index.php
