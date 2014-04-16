@@ -7,19 +7,18 @@ Harvester
 
 Установка:
 
-1. Скачиваем
+- Скачиваем
 
-2. Устанавливаем Yii1.x framework - http://www.yiiframework.com/download/
+- Устанавливаем Yii1.x framework - http://www.yiiframework.com/download/
 
-3. Изменяем index.php, путь к фреймворку, в этой строке:
-
+- Изменяем index.php, путь к фреймворку, в этой строке:
 ```php
 $yii=dirname(__FILE__).DIRECTORY_SEPARATOR.'..\yii\yii.php';
 ```
 
-4. Импортируем базу `protected/data/structure.sql` и затем `protected/data/data.sql`
+- Импортируем базу `protected/data/structure.sql` и затем `protected/data/data.sql`
 
-5. Настраиваем конфиг `protected/config/main.php`:
+- Настраиваем конфиг `protected/config/main.php`:
 
 Базу DB
 ```php
