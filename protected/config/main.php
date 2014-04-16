@@ -64,7 +64,7 @@ return array(
     // using Yii::app()->params['paramName']
     'params' => array(
         // this is used in contact page
-        'adminEmail' => 'asu0@vitebsk.energo.net',
+        'adminEmail' => 'admin@inventar.net',
         'ip_access' => array('10.178.4.15', '10.178.4.3', '10.178.4.14', '10.178.4.30', '10.178.4.31', '10.178.4.17',),
     ),
 );
