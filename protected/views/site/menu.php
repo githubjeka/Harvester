@@ -2,7 +2,7 @@
 	<div class="six columns">
 		<div class="panel">
 			
-			<h5>Информация</h6>
+			<h5>Информация</h5>
 			
 			<p>
 				<?php $this->widget('zii.widgets.CMenu',array(
@@ -79,7 +79,7 @@
 			</p>
 		</div>
         <div class="panel">
-			<h5>Удалённое администрирование</h6>
+			<h5>Удалённое администрирование</h5>
 			<p><b>Выключение и перезагрузка компьютера: </b>
                 <form method="POST" action="<?php echo $this->createUrl('Computers/Shotdown') ?>" class="nice">                    
                     <?php 
@@ -123,13 +123,13 @@
 <div class="row">
 	<div class="six columns">
 		<div class="panel">
-			<h5>Настройки</h6>
+			<h5>Настройки</h5>
 			
 		</div>
 	</div>
 	<div class="six columns">
 		<div class="panel">
-			<h5>Отчёты</h6>
+			<h5>Отчёты</h5>
 			
 		</div>
 	</div>

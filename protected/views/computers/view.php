@@ -37,6 +37,7 @@ if (!Yii::app()->user->isGuest) {
         'attributes' => array(
             'name',
             'inventar_number',
+            'year_build',
             array(
                 'name' => 'ip',
                 'type' => 'raw',

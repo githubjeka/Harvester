@@ -75,6 +75,12 @@
             <?php echo $form->textField($model, 'user', array('maxlength' => 100, 'class' => 'input-text')); ?>
             <?php echo $form->error($model, 'user', $htmlOptions = array('class' => 'alert-box error')); ?>
         </div>
+
+        <div class="row">
+            <?php echo $form->labelEx($model, 'year_build'); ?>
+            <?php echo $form->textField($model, 'year_build', array('maxlength' => 4, 'class' => 'input-text')); ?>
+            <?php echo $form->error($model, 'year_build', $htmlOptions = array('class' => 'alert-box error')); ?>
+        </div>
     </div>
 
     <div class="columns five">

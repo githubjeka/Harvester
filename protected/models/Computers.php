@@ -10,6 +10,8 @@
  * @property string $Domain
  * @property string $Department
  * @property integer $primary_printer
+ * @property string $inventar_number
+ * @property string $year_build
  *
  * The followings are the available model relations:
  * @property BIOS[] $bIOSes
@@ -62,6 +64,7 @@ class Computers extends CActiveRecord
             array('Domain', 'length', 'max' => 63),
             array('Department', 'length', 'max' => 50),
             array('user', 'length', 'max' => 100),
+            array('year_build', 'length', 'max' => 4,'min'=>4),
             array('primary_printer', 'safe'),
             array('inventar_number', 'numerical', 'max'=>999999,'integerOnly'=>true),
 
@@ -118,6 +121,7 @@ class Computers extends CActiveRecord
             'primary_printer' => 'Основной принтер',
             'cartridges_search' => 'Картриджи',
             'inventar_number' => 'Инвент. №',
+            'year_build' => 'Год',
         );
     }
 
@@ -140,6 +144,7 @@ class Computers extends CActiveRecord
         $criteria->compare('Department', $this->Department, true);
         $criteria->compare('user', $this->user, true);
         $criteria->compare('inventar_number', $this->inventar_number, true);
+        $criteria->compare('year_build', $this->year_build, true);
         $criteria->with = array('primaryPrinter');
         $criteria->compare('primaryPrinter.printer_name', $this->primary_printer, true);
         $criteria->compare('primaryPrinter.printerCartridges.cartridge_name', $this->cartridges_search, true);

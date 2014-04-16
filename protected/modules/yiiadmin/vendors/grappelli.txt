@@ -1,2 +1,0 @@
-Design and main css files.
-http://code.google.com/p/django-grappelli/

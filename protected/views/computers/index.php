@@ -55,6 +55,7 @@ $this->widget(
             array(
                 'name' => 'inventar_number',
             ),
+            'year_build',
             array(
                 'name' => 'Department',
                 'filter' => CHtml::listData(

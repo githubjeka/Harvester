@@ -10,9 +10,6 @@ return array(
     'name' => 'Инвентаризация компьютеров',
     'sourceLanguage' => 'en',
     'language' => 'ru',
-    // preloading 'log' component
-//    'preload' => array('log'),
-    // autoloading model and component classes
     'import' => array(
         'application.models.*',
         'application.components.*',
@@ -62,15 +59,6 @@ return array(
             // use 'site/error' action to display errors
             'errorAction' => 'site/error',
         ),
-//		 'log'=>array(
-//			 'class'=>'CLogRouter',
-//			 'routes'=>array(
-//				 array(
-//					 'class'=>'ext.yii-debug-toolbar.YiiDebugToolbarRoute',
-//					 'ipFilters'=>array('10.178.4.15'),
-//				 ),
-//			 ),
-//		 ),
     ),
     // application-level parameters that can be accessed
     // using Yii::app()->params['paramName']

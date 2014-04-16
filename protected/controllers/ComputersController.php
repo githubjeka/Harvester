@@ -49,7 +49,7 @@ class ComputersController extends Controller
             ),
             array(
                 'allow', // allow admin user to perform 'admin' and 'delete' actions
-                'actions' => array('admin'),
+                'actions' => array('admin','ShowServices'),
                 'users' => array('admin'),
             ),
             array(
@@ -185,6 +185,14 @@ class ComputersController extends Controller
         }
     }
 
+    function actionWork(){
+        $model = $this->loadUser();
+        $this->renderPartial('//layouts/inside/_working_cities_ajax',
+            array(
+                'model'=>$model,
+            ), array(),true, false  );
+
+    }
     /**
      * Lists all models.
      */
@@ -193,6 +201,7 @@ class ComputersController extends Controller
         $this->layout = '//layouts/column1';
 
         $model = new Computers('search');
+
         $model->unsetAttributes(); // clear any default values
         if (isset($_GET['Computers'])) {
             $model->attributes = $_GET['Computers'];
@@ -373,6 +382,31 @@ class ComputersController extends Controller
             $user = User::model()->find("id=".Yii::app()->user->id);
             $user->rowPerPage = (int) $rowPerPage;
             $user->save('rowPerPage');
+        }
+    }
+
+    public function actionShowServices($comp='')
+    {
+        $objLocator = new COM("WbemScripting.SWbemLocator");
+
+        if ($comp == '') {
+            $objService = $objLocator->ConnectServer();
+        } else {
+            $objService = $objLocator->ConnectServer(
+                $comp,
+                "root\cimv2",
+                'admin_vts',
+                'Vts_adm0',
+                "MS_409",
+                "ntlmdomain:ViTTS"
+            );
+        }
+
+
+        foreach ($objService->instancesof('Win32_Process') as $propItem) {
+
+            echo $propItem->Name . '<br>';
+
         }
     }
 }
