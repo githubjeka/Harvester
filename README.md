@@ -45,3 +45,6 @@ $yii=dirname(__FILE__).DIRECTORY_SEPARATOR.'..\yii\yii.php';
                 //...
                 'ips' => Yii::app()->params['ip_access'], //тут
 ```
+
+
+*Есть вопросы* - пишите `new issue` - https://github.com/githubjeka/Harvester/issues
