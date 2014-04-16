@@ -395,8 +395,8 @@ class ComputersController extends Controller
             $objService = $objLocator->ConnectServer(
                 $comp,
                 "root\cimv2",
-                'admin_vts',
-                'Vts_adm0',
+                'username',
+                'password',
                 "MS_409",
                 "ntlmdomain:ViTTS"
             );

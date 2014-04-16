@@ -1,7 +1,7 @@
 <?php
  function actionIndex()
     {
-        showServices("10.178.4.15");
+        showServices("ipcomp");
     }
 
     function showServices($vComputerName)
@@ -14,8 +14,8 @@
             $objService = $objLocator->ConnectServer(
                 $vComputerName,
                 "root\cimv2",
-                'admin_vts',
-                'Vts_adm0',
+                'username',
+                'password',
                 "MS_409",
                 "ntlmdomain:ViTTS"
             );
