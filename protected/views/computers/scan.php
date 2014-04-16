@@ -25,8 +25,8 @@ $this->menu=array(
 <?php	
 	foreach ($DomainWithComp as $DomainName=>$ArrayComp) { ?>		 
 		<h5><?php echo $DomainName.' ('.count($ArrayComp).')';	?> </h5>
-		<p class="button white "><?
-		foreach ($ArrayComp as $CompName) {			
+        <p class="button white "><?php
+            foreach ($ArrayComp as $CompName) {
 			$temp=FALSE;
 			foreach ($NotBDComputers as $NotBDC) {				
 				if ($NotBDC==$CompName){
