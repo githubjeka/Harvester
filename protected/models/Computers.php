@@ -608,8 +608,8 @@ class Computers extends CActiveRecord
         $i = 1;
         foreach ($Data->getData() as $thisArray) {
             $this->clearValue($thisArray);
-            $thisArray->scan($COM, $this->id, $i);
-            if (!$thisArray->save() && !Yii::app()->request->isAjaxRequest) {
+            $result = $thisArray->scan($COM, $this->id, $i);
+            if (isset($result) && !$thisArray->save() && !Yii::app()->request->isAjaxRequest) {
                 throw new CHttpException(404, 'Ошибка при получении информации о Видеоадаптаре');
             }
             $i++;
