@@ -52,10 +52,8 @@ INSERT INTO `tbl_profiles_fields` (`id`, `varname`, `title`, `field_type`, `fiel
 
 --
 -- Dumping data for table `tbl_users`
+-- Note: Password 123456
 --
 
 INSERT INTO `tbl_users` (`id`, `username`, `password`, `email`, `activkey`, `createtime`, `lastvisit`, `superuser`, `status`, `rowPerPage`) VALUES
-(1, 'admin', '31ca2a47a67682dde44c5ec7508087fa', 'webmaster@example.com', '9c966491265b0e2fadd211a21c146cf7', 1261146094, 1394441835, '1', 1, 10),
-(2, 'asu7', 'fc68c7a6bbbddb19f672c1a97f8f4eee', 'jet@uuu.ru', 'e122c12a54239bcf16825a2aa5445932', 1349155803, 1394094520, '0', 1, 20),
-(3, 'dev', '31ca2a47a67682dde44c5ec7508087fa', 'dev@dev.ru', 'c6626a81786d7739859b2dcf074b2023', 1349763616, 1392800818, '1', 1, 100),
-(4, 'lincore', '99a750c9b18d68dba279d7639c9d031a', '', '3a16cb81e92005a2ea9dfbd4a48e7584', 1357215848, 0, '0', 0, 10);
+(1, 'admin', 'e10adc3949ba59abbe56e057f20f883e', 'webmaster@example.com', '46722fb72da68b4e8df40d04e227f723', 1261146094, 1394441835, '1', 1, 10);
