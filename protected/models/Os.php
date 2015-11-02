@@ -109,7 +109,8 @@ class Os extends CActiveRecord
 		foreach ($COM->instancesof ( 'Win32_OperatingSystem' ) as $OperatingSystem ) {				
 			if ($index==$i) {
 				$this->comp_id=$IDComp;
-				$this->os_name=$OperatingSystem->Name;
+			        $charset = 'windows-' . $OperatingSystem->CodeSet;
+                                $this->os_name = iconv($charset, 'UTF-8', $OperatingSystem->Name);
 				$this->os_product_key=$OperatingSystem->SerialNumber;
 				$this->date_install=$OperatingSystem->InstallDate;
 				$this->Path=$OperatingSystem->WindowsDirectory;				
