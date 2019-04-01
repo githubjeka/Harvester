@@ -387,7 +387,7 @@ class ComputersController extends Controller
 
     public function actionShowServices($comp='')
     {
-        $objLocator = new COM("WbemScripting.SWbemLocator");
+        $objLocator = new \COM("WbemScripting.SWbemLocator");
 
         if ($comp == '') {
             $objService = $objLocator->ConnectServer();
