@@ -225,8 +225,8 @@ class Computers extends CActiveRecord
     public function scan($NameComp)
     {
         try {
-            $COM = new COM ('winmgmts:{impersonationLevel=impersonate}//' . $NameComp . '/root/cimv2');
-//            $COM = new COM("WbemScripting.SWbemLocator");
+            $COM = new \COM ('winmgmts:{impersonationLevel=impersonate}//' . $NameComp . '/root/cimv2');
+//            $COM = new \COM("WbemScripting.SWbemLocator");
 //            $COM = $COM->ConnectServer(
 //                $NameComp,
 //                "root\cimv2",
